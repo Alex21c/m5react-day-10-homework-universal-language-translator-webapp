@@ -20,4 +20,13 @@ html{
   font-family: "Roboto", sans-serif;
 }
 
+body{
+  background-color: #343d3f;
 
+}
+
+
+.disabled, button.disabled:hover{
+  background:#343d3f;
+  color:white;
+}
