@@ -30,3 +30,70 @@ body{
   background:#343d3f;
   color:white;
 }
+
+
+@media screen and (max-width:870px){
+  div#wrapperUniversaLanguageTranslatorWebApp{
+    width: 95%;
+  }
+}
+
+@media screen and (max-width:694px){
+  span.appName{
+    line-height: 2.3rem;
+  }
+}
+@media screen and (max-width:622px){
+  div.wrapperLangSelect{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:532px){
+  div#wrapperLoaderImage{
+    width:100%;    
+    height: 15rem;
+    
+  }
+  div#wrapperLoaderImage img{
+    object-fit: contain;
+  }
+}
+@media screen and (max-width:432px){
+  div#wrapperUniversaLanguageTranslatorWebApp h1{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:.5rem;
+    margin-bottom:1rem;
+  }
+  div.wrapperLangSelect label{
+    text-align: left;
+    min-width: unset;
+    
+  }
+  div.wrapperLangSelect{
+    align-items: flex-start;
+  }
+
+}
+
+@media screen and (max-width:402px){
+  div.wrapperLangSelect select{
+    width: 95%;
+    font-size: 1rem;
+  }
+  
+  textarea{
+    height: 10rem;
+  }
+  
+}
+@media screen and (max-width:362px){
+  button#submitBtn{
+    flex-direction: column;
+    gap:0rem;
+  }
+
+}
