@@ -24,7 +24,20 @@ npm run start
 + [Google Fonts](https://fonts.google.com/)
 + [Font Awesome](https://fontawesome.com/icons/)
 
+## Important 
+You need to create an `.env` file in the root containing Rapid API Key.
+Yours .env file should look like this
+```
+REACT_APP_X_RAPIDAPI_KEY_TEXT_TRANSLATOR2_BY_DICKYAGUSTIN=YoursApiKey
+
+```
+### How to get yours API Key
+Now to get that API Key, you need to signup & subscribe to [Rapid API Text Translator 2](https://rapidapi.com/dickyagustin/api/text-translator2) and inside settings you will get yours token.
+while deploying yours app to [Vercel](https://vercel.com/) you need to specify these Enviornmnet variables inside settings.
+
+### Why i did this?
+to protect my API Key from aunthorized activity! 
+
 ## Author
 [Abhishek kumar](https://www.linkedin.com/in/alex21c/), ([Geekster](https://geekster.in/) MERN Stack FS-14 Batch)
-
 

@@ -6,7 +6,7 @@ export default function LanguageSelect({supportedLangs, name, defaultValue, labe
       {
 
         Object.entries(supportedLangs).map(([key, value], idx)=>{
-          // console.log(key, value);
+          // //console.log(key, value);
           let selected = defaultValue === key;
           return <option key={idx} name={name} value={key}  >{value}</option>
 

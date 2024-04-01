@@ -69,7 +69,7 @@ function App() {
         }
 
       event.preventDefault();
-      //console.log(stateTextQuery);
+      ////console.log(stateTextQuery);
       if(refTextareaSrcLang.current.value === ''){
         showError('Kindly provide text you want to translate to inside the textarea above!');
         return;
@@ -85,8 +85,8 @@ function App() {
       encodedParams.set('source_language', refSrcLang.current.value);
       encodedParams.set('target_language', refDestinationLang.current.value);
       encodedParams.set('text', refTextareaSrcLang.current.value);
-      // console.log('src and dstinationlang',  refSrcLang.current.value, refDestinationLang.current.value,  refTextareaSrcLang.current.value);
-      // console.log(API_KEY)
+      // //console.log('src and dstinationlang',  refSrcLang.current.value, refDestinationLang.current.value,  refTextareaSrcLang.current.value);
+      // //console.log(API_KEY)
       // return ;
       
       const options = {
@@ -103,10 +103,12 @@ function App() {
       try {
         const response = await axios.request(options);
         let translatedText = response.data.data.translatedText;
-        console.log(translatedText);
+        //console.log(translatedText);
         // setting it as the value of textarea
         // which making it visible
-        udpateStateTranslatedText(translatedText);
+
+        let desiredOutput=`${refTextareaSrcLang.current.value} \r\n\r\n ${translatedText}`;
+        udpateStateTranslatedText(desiredOutput);
 
       } catch (error) {
         throw new Error(`failed to translate yours text! ${error}` );
@@ -115,7 +117,7 @@ function App() {
     async function makeAPICall(){
       try {
         // validating
-          console.log(refTextareaSrcLang.current.value)
+          //console.log(refTextareaSrcLang.current.value)
   
         // disable button
           showLoaderImage();
